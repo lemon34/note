@@ -22,8 +22,6 @@ int main() {
             
     }
     for (auto a : temp) {
-                std::cout << "element: " << a << std::endl;
-            
+         std::cout << "element: " << a << std::endl;
     }
-
 }
