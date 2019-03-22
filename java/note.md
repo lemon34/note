@@ -45,3 +45,44 @@ this is a notebook that about java virtual machine
 * 串行收集器： DefNew：是使用-XX:+UseSerialGC（新生代，老年代都使用串行回收收集器）。 并行收集器： ParNew：是使用-XX:+UseParNewGC（新生代使用并行收集器，老年代使用串行回收收集器）或者-XX:+UseConcMarkSweepGC(新生代使用并行收集器，老年代使用CMS)。 PSYoungGen：是使用-XX:+UseParallelOldGC（新生代，老年代都使用并行回收收集器）或者-XX:+UseParallelGC（新生代使用并行回收收集器，老年代使用串行收集器） garbage-first heap：是使用-XX:+UseG1GC（G1收集器） 
 
 * Minor GC 表示的是清理年轻代的对象；Major GC表示的是清理老年代的对象；Full GC表示的是年轻代和老年代的对象同时清理
+
+* java的虚拟机性能监控与故障处理工具
+
+  * jps  // 虚拟机进程状况工具
+  * jstat // 虚拟机统计信息监视工具
+  * jinfo //java配置信息工具
+  * jmap //java内存映像工具
+  * jstack //虚拟机堆转储快照工具，dump
+  * hsdis //jit生成代码反汇编
+
+* java与c++之间，有一堵由内存动态分配的由垃圾收集技术所围成的高墙
+
+* static关键字
+
+  * 修饰成员变量
+
+    * 静态成员变量的初始化时间要更早，是在静态存储区，将其变为类变量，而不是对象的成员
+
+  * 修饰成员方法
+
+    * 最大的优势就是可以使用类名直接操作方法
+
+  * 静态块
+
+    * 将多个类成员放在一起初始化，使得程序更加完整，
+
+    * ```java
+      static {
+              book2 = new Book("static成员book2成员变量初始化");
+              book4 = new Book("static成员book4成员变量初始化");
+          }
+      //直接进行初始化
+      ```
+
+    * 
+
+  * 静态导包
+
+    * 将类方法直接导入到当前类中，从而使用方法名即可调用类方法，更加方便
+
+* 在同一个java文件中，只允许你存在一个public class
