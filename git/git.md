@@ -9,6 +9,7 @@ git 命令
   * git push -u origin master
 * git  branch // 查看当前所在的分支
 * git checkout -b  "name"// git branch name and git  checkout name
+* git branch -f  master HEAD// 可能出现分支指针和head指针不在他同一个位置，这个时候需要移动分支指针
 * git rebase 
   * ![1553485810309](C:\Users\a524\AppData\Local\Temp\1553485810309.png)
     * origin 是主干，mywork是分支，现在两个branch上面都前进了，导致分叉，所以可以使用git merge，将分支merge一下，这样就是合并形成下面的状态。
