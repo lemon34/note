@@ -2,7 +2,7 @@
 
 * 首先是
 
-![1554108575300](C:\Users\a524\AppData\Local\Temp\1554108575300.png)
+![1554108575300](https://github.com/lemon34/note/blob/master/java/screenshot/1554108575300.png)
 
 在图中红色圈的地方打√，表明创建一个web project，具体如下![1554108637265](C:\Users\a524\AppData\Local\Temp\1554108637265.png)
 
